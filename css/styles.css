@@ -4,7 +4,7 @@
 
 @font-face {
     font-family: 'ralewayregular';
-    src: url('../font/raleway-regular.woff2') format('woff2'), url('../font/raleway-regular.woff') format('woff');
+    src: url('../fonts/raleway-regular.woff2') format('woff2'), url('../fonts/raleway-regular.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 }
@@ -40,27 +40,41 @@ header {
     text-decoration: none;
     color: white;
     display: block;
+    ;
     cursor: pointer;
 }
 
-div.subMenuDiv {
-    width: 120px;
-    background: black;
+div.subMenuDiv:hover {
+    display: block;
+}
+
+ul.subMenu {
     position: absolute;
-    top: 50px;
-    right: 190px;
-    padding: 10px;
+    right: 185px;
     display: none;
 }
 
-div.arrow {
-    width: 20px;
-    height: 20px;
-    background: black;
-    position: absolute;
-    top: -10px;
-    transform: rotate(45deg);
-    left: 49px;
+ul.subMenu a {
+    color: white;
+    background-color: black;
+    text-decoration: none;
+    display: block;
+    padding: 0 15px;
+}
+
+div.head ul li:last-child:hover ul.subMenu {
+    display: block;
+}
+
+li.arrow {
+    width: 0;
+    height: 0;
+    background-color: transparent;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-bottom: 10px solid black;
+    position: relative;
+    margin: 0 auto;
 }
 
 .head nav ul.subMenu li {

@@ -1,17 +1,5 @@
 document.addEventListener("DOMContentLoaded", function() {
 
-    // menu
-    var liMenu = document.querySelector('div.head ul li:last-child');
-    var subMenu = liMenu.querySelector('div.subMenuDiv');
-
-    liMenu.addEventListener('mouseover', function() {
-        subMenu.style.display = "block";
-    });
-    liMenu.addEventListener('mouseout', function() {
-        subMenu.style.display = "none";
-    });
-
-
     //slider
     var leftBtn = document.querySelector('div.sliderLeft');
     var rightBtn = document.querySelector('div.sliderRight');
@@ -102,7 +90,7 @@ document.addEventListener("DOMContentLoaded", function() {
                 summaryChairPrice = 0;
                 summaryChairPrice = summaryChairPrice + parseInt(this.dataset.chairPrice);
                 totalPrice.innerHTML = summaryChairPrice + summaryColorPrice + summaryPatterntPrice + summaryTransportPrice;
-                this.parentElement.classList.toggle('showList');
+                this.parentElement.classList.add('showList');
             });
         }
     });
@@ -117,7 +105,7 @@ document.addEventListener("DOMContentLoaded", function() {
                 summaryColorPrice = 0;
                 summaryColorPrice = summaryColorPrice + parseInt(this.dataset.colorPrice);
                 totalPrice.innerHTML = summaryChairPrice + summaryColorPrice + summaryPatterntPrice + summaryTransportPrice;
-                this.parentElement.classList.toggle('showList');
+                this.parentElement.classList.add('showList');
             });
         }
     });
@@ -132,7 +120,7 @@ document.addEventListener("DOMContentLoaded", function() {
                 summaryPatterntPrice = 0;
                 summaryPatterntPrice = summaryPatterntPrice + parseInt(this.dataset.patternPrice);
                 totalPrice.innerHTML = summaryChairPrice + summaryColorPrice + summaryPatterntPrice + summaryTransportPrice;
-                this.parentElement.classList.toggle('showList');
+                this.parentElement.classList.add('showList');
             });
         }
     });
