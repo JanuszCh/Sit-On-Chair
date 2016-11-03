@@ -10,6 +10,7 @@
 </head>
 
 <body>
+
     <header>
         <div class="head mainWidth">
             <nav>
@@ -18,19 +19,18 @@
                     <li><a href="#">Kontakt</a></li>
                     <li><a href="#">Galeria</a></li>
                     <li><a href="#">O firmie</a>
-                        <!-- <div class="subMenuDiv showSubMenu"> -->
-                            <ul class="subMenu">
-                                <li class="arrow"></li>
-                                <li><a href="#">Historia</a></li>
-                                <li><a href="#">Nasz team</a></li>
-                                <li><a href="#">Aktualności</a></li>
-                            </ul>
-                        <!-- </div> -->
+                        <ul class="subMenu">
+                            <li class="arrow"></li>
+                            <li><a href="#">Historia</a></li>
+                            <li><a href="#">Nasz team</a></li>
+                            <li><a href="#">Aktualności</a></li>
+                        </ul>
                     </li>
                 </ul>
             </nav>
         </div>
     </header>
+
     <section class="slider">
         <div class="mainWidth">
             <div class="sliderLeft">&lt;</div>
@@ -51,6 +51,7 @@
             <div class="sliderRight">&gt;</div>
         </div>
     </section>
+
     <section class="products">
         <div class="mainWidth">
             <div class="product1">
@@ -68,6 +69,7 @@
             </div>
         </div>
     </section>
+
     <section class="priceList">
         <div class="mainWidth">
             <p class="priceListTitle">Cennik</p>
@@ -110,36 +112,33 @@
         </div>
     </section>
 
-
-
     <section class="application">
         <div class="mainWidth">
             <section class="choice">
                 <p class="choiceTitle">Skomponuj własne krzesło</p>
-
                 <div class="form">
-                    <div class="drop_down_list">
-                        <span class="list_label chairName">Wybierz rodzaj</span>
-                        <span class="list_arrow chairName"></span>
-                        <ul class="list_panel showList">
+                    <div class="dropDownList">
+                        <span class="listLabel chairName">Wybierz rodzaj</span>
+                        <span class="listArrow chairName"></span>
+                        <ul class="listPanel showList">
                             <li data-chair-price="150">Clair</li>
                             <li data-chair-price="250">Margarita</li>
                             <li data-chair-price="400">Selena</li>
                         </ul>
                     </div>
-                    <div class="drop_down_list">
-                        <span class="list_label chairColor">Wybierz kolor</span>
-                        <span class="list_arrow chairColor"></span>
-                        <ul class="list_panel showList">
+                    <div class="dropDownList">
+                        <span class="listLabel chairColor">Wybierz kolor</span>
+                        <span class="listArrow chairColor"></span>
+                        <ul class="listPanel showList">
                             <li data-color-price="50">Czerwony</li>
                             <li data-color-price="70">Czarny</li>
                             <li data-color-price="60">Pomarańczowy</li>
                         </ul>
                     </div>
-                    <div class="drop_down_list">
-                        <span class="list_label chairPattern">Wybierz materiał</span>
-                        <span class="list_arrow chairPattern"></span>
-                        <ul class="list_panel showList">
+                    <div class="dropDownList">
+                        <span class="listLabel chairPattern">Wybierz materiał</span>
+                        <span class="listArrow chairPattern"></span>
+                        <ul class="listPanel showList">
                             <li data-pattern-price="50">Tkanina</li>
                             <li data-pattern-price="300">Skóra</li>
                         </ul>
@@ -155,14 +154,14 @@
             </section>
             <section class="summary">
                 <p class="summaryTitle">Podsumowanie</p>
-                <div class="summary_panel">
-                    <div class="panel_left">
+                <div class="summaryPanel">
+                    <div class="panelLeft">
                         <h4 class="title">Twój fotel</h4>
                         <span class="color"></span>
                         <span class="pattern"></span>
                         <span class="transport"></span>
                     </div>
-                    <div class="panel_right">
+                    <div class="panelRight">
                         <h4 class="title"></h4>
                         <span class="color"></span>
                         <span class="pattern"></span>
@@ -171,12 +170,10 @@
                     <div class="totalPriceLabel">SUMA</div>
                     <div class="totalPrice"></div>
                 </div>
-                <a href="" class="green_button">Zamawiam</a>
+                <a href="" class="greenButton">Zamawiam</a>
             </section>
         </div>
     </section>
-
-
 
     <section class="contact">
         <div class="mainWidth">
@@ -184,16 +181,17 @@
             <form class="contactForm" action="index.html" method="post">
                 <input type="text" name="name" value="" placeholder="Imię"><br><br>
                 <input type="email" name="email" value="" placeholder="email"><br><br>
-                <textarea name="name" rows="8" cols="40" placeholder="Wiadomość"></textarea><br><br>
+                <textarea name="message" rows="8" cols="40" placeholder="Wiadomość"></textarea><br><br>
             </form>
             <img src="images/chair (5).jpg" alt="" />
             <div class="contactForm2">
-                <input type="checkbox" name="name" id="name" value="">
-                <label for="name">Zgadzam się na przetwarzanie<br>danych osobowych</label>
+                <input type="checkbox" name="agreement" id="agreement" value="">
+                <label for="agreement">Zgadzam się na przetwarzanie<br>danych osobowych</label>
             </div>
             <div class="contactButton"><a href="#">Wyślij</a></div>
         </div>
     </section>
+
     <footer>
         <div class="mainWidth">
             <p>Copyright 2014 | All Rights Reserved - Sit On Chair</p>
@@ -206,8 +204,9 @@
             </div>
         </div>
     </footer>
-    <script type="text/javascript" src="js/app.js">
-    </script>
+
+    <script type="text/javascript" src="js/app.js"></script>
+
 </body>
 
 </html>

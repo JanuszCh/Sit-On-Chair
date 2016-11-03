@@ -15,6 +15,9 @@
     margin-right: auto;
 }
 
+
+/*header*/
+
 header {
     width: 100%;
     background: black;
@@ -109,6 +112,9 @@ li.arrow {
     padding: 0 51px;
 }
 
+
+/*slider*/
+
 .slider {
     background: rgba(250, 250, 250, 1);
     background: -moz-linear-gradient(top, rgba(250, 250, 250, 1) 0%, rgba(250, 250, 250, 1) 51%, rgba(204, 204, 212, 1) 100%);
@@ -129,12 +135,6 @@ li.arrow {
 .sliderImg li {
     display: none;
 }
-
-
-/*
-.showSlider {
-    display: block;s
-}*/
 
 .sliderContent {
     text-align: center;
@@ -203,6 +203,9 @@ li.arrow {
     display: none;
 }
 
+
+/*section products*/
+
 .products {
     height: 350px;
     position: relative;
@@ -257,6 +260,9 @@ li.arrow {
     font-weight: bold;
 }
 
+
+/*section priceList*/
+
 .priceList {
     background: #f1f1f1;
     width: 100%;
@@ -277,6 +283,8 @@ li.arrow {
 
 .pricePlan:nth-of-type(2) {
     margin: 80px 26px 0px 26px;
+    border: 3px solid #24BAA0;
+    background: #24BAA0;
 }
 
 .pricePlanPrice {
@@ -291,7 +299,11 @@ li.arrow {
     left: calc(50% - 64px);
 }
 
-div.pricePlanPrice p:nth-of-type(1) {
+.pricePlan:nth-of-type(2) .pricePlanPrice {
+    border: 1px solid #24BAA0;
+}
+
+.pricePlanPrice p:nth-of-type(1) {
     font-size: 45px;
     font-weight: bold;
     color: #d6d5d5;
@@ -299,13 +311,21 @@ div.pricePlanPrice p:nth-of-type(1) {
     top: 5px;
 }
 
-div.pricePlanPrice p:nth-of-type(1) sup {
+.pricePlan:nth-of-type(2) p:nth-of-type(1) {
+    color: #24BAA0;
+}
+
+.pricePlanPrice p:nth-of-type(1) sup {
     font-size: 16px;
     position: relative;
     top: -27px;
 }
 
-div.pricePlanPrice p:nth-of-type(2) {
+.pricePlan:nth-of-type(2) p:nth-of-type(1) sup {
+    color: #24BAA0;
+}
+
+.pricePlanPrice p:nth-of-type(2) {
     font-size: 16px;
     font-weight: bold;
     color: #d6d5d5;
@@ -314,9 +334,13 @@ div.pricePlanPrice p:nth-of-type(2) {
     top: 9px;
 }
 
+.pricePlan:nth-of-type(2) p:nth-of-type(2) {
+    color: #24BAA0;
+}
+
 .pricePlanItem1, .pricePlanItem3 {
     width: 100%;
-    background: #e4e4e4;
+    background-color: #e4e4e4;
     color: #939393;
     font-size: 24px;
     text-align: center;
@@ -327,7 +351,7 @@ div.pricePlanPrice p:nth-of-type(2) {
 
 .pricePlanItem2, .pricePlanItem4 {
     width: 100%;
-    background: #f1f1f1;
+    background-color: #f1f1f1;
     color: #939393;
     font-size: 24px;
     text-align: center;
@@ -338,6 +362,10 @@ div.pricePlanPrice p:nth-of-type(2) {
 
 .pricePlanItem1 {
     top: 243px;
+}
+
+.pricePlan:nth-of-type(2) .pricePlanItem1, .pricePlan:nth-of-type(2) .pricePlanItem3 {
+    background-color: white;
 }
 
 .pricePlanItem2 {
@@ -369,9 +397,17 @@ div.pricePlanPrice p:nth-of-type(2) {
     cursor: pointer;
 }
 
+.pricePlan:nth-of-type(2) .priceButton {
+    background-color: white;
+}
+
 .priceButton a {
     color: white;
     text-decoration: none;
+}
+
+.pricePlan:nth-of-type(2) .priceButton a {
+    color: #24BAA0;
 }
 
 .pricePlan h2 {
@@ -381,6 +417,10 @@ div.pricePlanPrice p:nth-of-type(2) {
     margin-top: 27px;
     text-align: center;
     font-weight: bold;
+}
+
+.pricePlan:nth-of-type(2) h2 {
+    color: white;
 }
 
 .pricePlan .circle {
@@ -394,6 +434,11 @@ div.pricePlanPrice p:nth-of-type(2) {
     background-color: white;
 }
 
+.pricePlan:nth-of-type(2) .circle {
+    border: 3px solid #24BAA0;
+    background-color: #24BAA0;
+}
+
 .pricePlan .circle::before {
     content: "";
     width: 25px;
@@ -405,12 +450,220 @@ div.pricePlanPrice p:nth-of-type(2) {
     background-color: #d6d5d5;
 }
 
+.pricePlan:nth-of-type(2) .circle::before {
+    background-color: #f1f1f1;
+}
+
 .priceListTitle, .contactTitle, .choiceTitle, .summaryTitle {
     border-bottom: 7px solid #24BAA0;
     width: 340px;
     text-transform: uppercase;
     font-size: 22px;
 }
+
+
+/*section aplication*/
+
+.application {
+    background-color: #f9f9f9;
+    padding: 30px 0;
+}
+
+section .choice, section .image {
+    float: left;
+}
+
+section .image {
+    margin: 60px 55px;
+}
+
+section .summary {
+    width: 340px;
+    float: right;
+}
+
+.form {
+    margin-top: 50px;
+}
+
+.dropDownList {
+    border: 1px solid #8de0d2;
+    width: 325px;
+    height: 55px;
+    background-color: white;
+    margin-bottom: 22px;
+    padding: 8px 12px;
+    position: relative;
+}
+
+.listLabel {
+    font-size: 30px;
+    color: #e2e2e2;
+}
+
+.checkbox {
+    position: relative;
+    padding: 30px 30px 30px 0;
+}
+
+.checkbox input {
+    display: block;
+    opacity: 0;
+    height: 48px;
+    position: absolute;
+    width: 48px;
+    cursor: pointer;
+}
+
+.checkbox label {
+    display: block;
+    padding-left: 65px;
+    position: relative;
+    font-size: 28px;
+    color: #cecece;
+    line-height: 120%;
+    padding-top: 10px;
+    cursor: pointer;
+}
+
+.checkbox label::before, .checkbox label::after {
+    border: 1px solid #27c7ab;
+    content: "";
+    display: block;
+    left: 0;
+    height: 48px;
+    position: absolute;
+    width: 48px;
+    top: 0;
+}
+
+.checkbox label::after {
+    background: url("data:image/svg+xml;charset=US-ASCII,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20xmlns%3Axlink%3D%22http%3A//www.w3.org/1999/xlink%22%20preserveAspectRatio%3D%22xMidYMid%22%20width%3D%2233.875%22%20height%3D%2233%22%20viewBox%3D%220%200%2033.875%2033%22%3E%0A%20%20%3Cpath%20d%3D%22M9.470%2C15.209%20L14.061%2C24.104%20C14.061%2C24.104%2021.522%2C6.026%2033.287%2C-0.000%20C33.000%2C4.304%2031.852%2C8.035%2033.861%2C12.626%20C28.696%2C13.774%2018.078%2C26.687%2014.635%2C33.000%20C9.756%2C26.974%204.017%2C22.382%20-0.000%2C20.948%20L9.470%2C15.209%20Z%22%20fill%3D%22%2327c7ab%22/%3E%0A%3C/svg%3E%0A") no-repeat center;
+    border: 0;
+    display: none;
+}
+
+.checkbox input:checked+label::after {
+    display: block;
+}
+
+.summaryPanel {
+    background-color: white;
+    width: 100%;
+    height: 195px;
+    padding: 10px;
+    margin-top: 50px;
+}
+
+.application .greenButton {
+    background-color: #24BAA0;
+    color: white;
+    text-align: center;
+    text-transform: uppercase;
+    width: 250px;
+    padding: 10px 30px;
+    font-size: 24px;
+    display: block;
+    margin: 20px auto 0 auto;
+    border-radius: 8px;
+    text-decoration: none;
+}
+
+.panelLeft {
+    display: inline-block;
+    width: 185px;
+    vertical-align: top;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #e7e7e7;
+    height: 135px;
+}
+
+.panelRight {
+    display: inline-block;
+    width: 100px;
+    border-left: 1px solid #e7e7e7;
+    text-align: right;
+    vertical-align: top;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #e7e7e7;
+    height: 135px;
+}
+
+.panelLeft h4, .panelRight h4 {
+    color: #24baa0;
+    font-size: 23px;
+}
+
+.panelLeft span {
+    margin-top: 10px;
+    font-size: 22px;
+    color: #5b5a5a;
+    display: block;
+}
+
+.panelRight span {
+    display: block;
+    font-size: 22px;
+    color: #24baa0;
+    margin-top: 10px;
+}
+
+.totalPriceLabel {
+    display: inline-block;
+    width: 185px;
+    margin-top: 10px;
+    font-size: 22px;
+    color: #5b5a5a;
+}
+
+.totalPrice {
+    display: inline-block;
+    width: 100px;
+    text-align: right;
+    margin-top: 10px;
+    font-size: 22px;
+    color: #24baa0;
+}
+
+.listArrow {
+    width: 0;
+    height: 0;
+    border-left: 15px solid transparent;
+    border-right: 15px solid transparent;
+    border-top: 15px solid #24baa0;
+    display: block;
+    position: absolute;
+    right: 14px;
+    top: 20px;
+    cursor: pointer;
+}
+
+.listPanel {
+    background-color: white;
+    border: 1px solid #ccc;
+    width: 325px;
+    padding-left: 15px;
+    padding-bottom: 10px;
+    list-style: none;
+    margin: 0;
+    left: 0px;
+    z-index: 2;
+    position: absolute;
+    top: 54px;
+}
+
+.showList {
+    display: none;
+}
+
+.listPanel li {
+    margin-top: 10px;
+    cursor: pointer;
+    color: #585858;
+}
+
+
+/*section contact*/
 
 .contact {
     width: 100%;
@@ -530,6 +783,9 @@ div.pricePlanPrice p:nth-of-type(2) {
     color: white;
 }
 
+
+/*footer*/
+
 footer {
     margin-bottom: 50px;
 }
@@ -578,224 +834,4 @@ i.fa-pinterest-square {
 
 i.fa-twitter-square {
     color: #44b0de;
-}
-
-.application {
-    background-color: #f9f9f9;
-    padding: 30px 0;
-}
-
-section .choice, section .image {
-    float: left;
-}
-
-section .image {
-    margin: 60px 55px;
-}
-
-section .summary {
-    width: 340px;
-    float: right;
-}
-
-.form {
-    margin-top: 50px;
-}
-
-.drop_down_list {
-    border: 1px solid #8de0d2;
-    width: 325px;
-    height: 55px;
-    background-color: white;
-    margin-bottom: 22px;
-    padding: 8px 12px;
-    position: relative;
-}
-
-.list_label {
-    font-size: 30px;
-    color: #e2e2e2;
-}
-
-.checkbox {
-    position: relative;
-    padding: 30px 30px 30px 0;
-}
-
-.checkbox input {
-    display: block;
-    opacity: 0;
-    height: 48px;
-    position: absolute;
-    width: 48px;
-    cursor: pointer;
-}
-
-.checkbox label {
-    display: block;
-    padding-left: 65px;
-    position: relative;
-    font-size: 28px;
-    color: #cecece;
-    line-height: 120%;
-    padding-top: 10px;
-    cursor: pointer;
-}
-
-.checkbox label::before, .checkbox label::after {
-    border: 1px solid #27c7ab;
-    content: "";
-    display: block;
-    left: 0;
-    height: 48px;
-    position: absolute;
-    width: 48px;
-    top: 0;
-}
-
-.checkbox label::after {
-    background: url("data:image/svg+xml;charset=US-ASCII,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20xmlns%3Axlink%3D%22http%3A//www.w3.org/1999/xlink%22%20preserveAspectRatio%3D%22xMidYMid%22%20width%3D%2233.875%22%20height%3D%2233%22%20viewBox%3D%220%200%2033.875%2033%22%3E%0A%20%20%3Cpath%20d%3D%22M9.470%2C15.209%20L14.061%2C24.104%20C14.061%2C24.104%2021.522%2C6.026%2033.287%2C-0.000%20C33.000%2C4.304%2031.852%2C8.035%2033.861%2C12.626%20C28.696%2C13.774%2018.078%2C26.687%2014.635%2C33.000%20C9.756%2C26.974%204.017%2C22.382%20-0.000%2C20.948%20L9.470%2C15.209%20Z%22%20fill%3D%22%2327c7ab%22/%3E%0A%3C/svg%3E%0A") no-repeat center;
-    border: 0;
-    display: none;
-}
-
-.checkbox input:checked+label::after {
-    display: block;
-}
-
-.inline_text {
-    display: inline-block;
-    width: 228px;
-    vertical-align: top;
-    margin-top: 30px;
-    margin-left: 15px;
-    color: #aeaeae;
-}
-
-.image_part img {
-    margin-top: 110px;
-    margin-left: 38px;
-}
-
-.application .green_bell {
-    background-color: #24baa0;
-    width: 200px;
-    height: 6px;
-    display: inline-block;
-    margin: 5px 0 5px 0;
-}
-
-.summary_panel {
-    background-color: white;
-    width: 100%;
-    height: 195px;
-    padding: 10px;
-    margin-top: 50px;
-}
-
-.application .green_button {
-    background-color: #24BAA0;
-    color: white;
-    text-align: center;
-    text-transform: uppercase;
-    width: 250px;
-    padding: 10px 30px;
-    font-size: 24px;
-    display: block;
-    margin: 20px auto 0 auto;
-    border-radius: 8px;
-    text-decoration: none;
-}
-
-.panel_left {
-    display: inline-block;
-    width: 185px;
-    vertical-align: top;
-    padding-bottom: 10px;
-    border-bottom: 1px solid #e7e7e7;
-    height: 135px;
-}
-
-.panel_right {
-    display: inline-block;
-    width: 100px;
-    border-left: 1px solid #e7e7e7;
-    text-align: right;
-    vertical-align: top;
-    padding-bottom: 10px;
-    border-bottom: 1px solid #e7e7e7;
-    height: 135px;
-}
-
-.panel_left h4, .panel_right h4 {
-    color: #24baa0;
-    font-size: 23px;
-}
-
-.panel_left span {
-    margin-top: 10px;
-    font-size: 22px;
-    color: #5b5a5a;
-    display: block;
-}
-
-.panel_right span {
-    display: block;
-    font-size: 22px;
-    color: #24baa0;
-    margin-top: 10px;
-}
-
-.totalPriceLabel {
-    display: inline-block;
-    width: 185px;
-    margin-top: 10px;
-    font-size: 22px;
-    color: #5b5a5a;
-}
-
-.totalPrice {
-    display: inline-block;
-    width: 100px;
-    text-align: right;
-    margin-top: 10px;
-    font-size: 22px;
-    color: #24baa0;
-}
-
-.list_arrow {
-    width: 0;
-    height: 0;
-    border-left: 15px solid transparent;
-    border-right: 15px solid transparent;
-    border-top: 15px solid #24baa0;
-    display: block;
-    position: absolute;
-    right: 14px;
-    top: 20px;
-    cursor: pointer;
-}
-
-.list_panel {
-    background-color: white;
-    border: 1px solid #ccc;
-    width: 325px;
-    padding-left: 15px;
-    padding-bottom: 10px;
-    list-style: none;
-    margin: 0;
-    left: 0px;
-    z-index: 2;
-    position: absolute;
-    top: 54px;
-}
-
-.showList {
-    display: none;
-}
-
-.list_panel li {
-    margin-top: 10px;
-    cursor: pointer;
-    color: #585858;
 }

@@ -46,23 +46,20 @@ document.addEventListener("DOMContentLoaded", function() {
     });
 
 
-    //selector
+    //application
     var choiceForm = document.querySelector('div.form');
-    var arrowChairName = choiceForm.querySelector('span.list_arrow.chairName');
+    var arrowChairName = choiceForm.querySelector('span.listArrow.chairName');
     var chairNameSelect = choiceForm.querySelector('span.chairName');
-    var arrowChairColor = choiceForm.querySelector('span.list_arrow.chairColor');
+    var arrowChairColor = choiceForm.querySelector('span.listArrow.chairColor');
     var chairColorSelect = choiceForm.querySelector('span.chairColor');
-    var arrowPattern = choiceForm.querySelector('span.list_arrow.chairPattern');
+    var arrowPattern = choiceForm.querySelector('span.listArrow.chairPattern');
     var chairPatternSelect = choiceForm.querySelector('span.chairPattern');
     var checkboxClick = choiceForm.querySelector('div.checkbox');
     var checkboxInput = choiceForm.querySelector('input[type=checkbox]');
 
-    var li = choiceForm.querySelectorAll('li'); ///?
-
-
-    var summaryPanel = document.querySelector('div.summary_panel');
-    var panelLeft = summaryPanel.querySelector('div.panel_left');
-    var panelRight = summaryPanel.querySelector('div.panel_right');
+    var summaryPanel = document.querySelector('div.summaryPanel');
+    var panelLeft = summaryPanel.querySelector('div.panelLeft');
+    var panelRight = summaryPanel.querySelector('div.panelRight');
     var chairNameSummary = panelLeft.querySelector('h4.title');
     var chairPrice = panelRight.querySelector('h4.title');
     var chairColor = panelLeft.querySelector('span.color');
@@ -77,8 +74,6 @@ document.addEventListener("DOMContentLoaded", function() {
     var summaryColorPrice = 0;
     var summaryPatterntPrice = 0;
     var summaryTransportPrice = 0;
-
-
 
     arrowChairName.addEventListener('click', function() {
         this.nextElementSibling.classList.toggle('showList');
@@ -139,23 +134,5 @@ document.addEventListener("DOMContentLoaded", function() {
             totalPrice.innerHTML = summaryChairPrice + summaryColorPrice + summaryPatterntPrice;
         }
     });
-
-
-    // znikanie listy nie działa idealnie
-    //
-    // var list = document.querySelectorAll('ul.list_panel');
-    //
-    // for (var i = 0; i < list.length; i++) {
-    //     list[i].addEventListener('mouseout', function() {
-    //             this.classList.toggle('showList');
-    //     });
-    // }
-
-
-
-
-
-
-
 
 });
